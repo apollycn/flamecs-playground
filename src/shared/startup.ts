@@ -10,7 +10,7 @@ export function startup(systems: System<[]>[]) {
 	if (RunService.IsClient()) {
 		const client = obtain_client();
 
-		const createWidget = (actionName: string, state: Enum.UserInputState) => {
+		const createWidget = (_actionName: string, state: Enum.UserInputState) => {
 			if (state !== Enum.UserInputState.Begin) return;
 
 			client.spawn_app(client.apps.home);
