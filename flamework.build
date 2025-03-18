@@ -1,6 +1,12 @@
 {
 	"version": 1,
 	"flameworkVersion": "1.2.4",
-	"identifiers": {},
+	"identifiers": {
+		"flamecs:out/shared/components/structs/player@User": "shared/components/structs/player@User",
+		"flamecs:out/shared/components/structs/user@User": "shared/components/structs/user@User",
+		"flamecs:out/shared/components/structs/model@Model": "shared/components/structs/model@Model",
+		"flamecs:out/shared/components/structs/capacity@Capacity": "shared/components/structs/capacity@Capacity",
+		"flamecs:out/shared/components/structs/attrition@Attrition": "shared/components/structs/attrition@Attrition"
+	},
 	"metadata": {}
 }

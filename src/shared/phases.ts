@@ -1,7 +1,7 @@
 import { Phase } from "@rbxts/planck";
 import PhaseType from "@rbxts/planck/out/Phase";
 import { EventInstance } from "@rbxts/planck/out/types";
-import { HapticService, Players } from "@rbxts/services";
+import { HapticService, Players, RunService } from "@rbxts/services";
 
 interface PhaseTable<T extends EventInstance, K extends keyof T> {
 	phase: PhaseType;
@@ -25,3 +25,4 @@ function createPhase<T extends EventInstance, K extends keyof T>(
 
 export const OnPlayerJoin = createPhase("OnPlayerJoin", Players, "PlayerAdded");
 export const OnPlayerLeave = createPhase("OnPlayerLeave", Players, "PlayerRemoving");
+export const Update = createPhase("Update", RunService, "Heartbeat");

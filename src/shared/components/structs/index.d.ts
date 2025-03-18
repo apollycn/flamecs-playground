@@ -1,3 +1,4 @@
 export * from "./capacity";
 export * from "./model";
-export * from "./player";
+export * from "./user";
+export * from "./attrition";

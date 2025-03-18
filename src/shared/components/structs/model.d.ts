@@ -1,5 +1,5 @@
 export interface Model {
-	model: Model;
+	model: PVInstance;
 	primaryPart?: BasePart;
 	humanoid?: Humanoid;
 }
